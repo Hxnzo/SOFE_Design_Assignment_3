@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block page_content %}
+
+    <div class="row align-items-center p-2 m-2">
+        <h1>Pay here: </h1>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="text-center">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <table class="table text-center">
+                    <tr>
+                        <th>
+                            <td class="align-middle">
+                                <button class="btn btn-outline-secondary" type="submit" value="Debit" name="Debit">Debit</button>
+                            </td>
+                            <td class="align-middle">
+                                <button class="btn btn-outline-secondary" type="submit" value="Credit" name="Credit">Credit</button>
+                            </td>
+                            <td class="align-middle">
+                                <button class="btn btn-outline-secondary" type="submit" value="Cash" name="Cash">Cash</button>
+                            </td>
+                        </th>
+                        <th>
+                            <table class="table table-hover">
+                                <tr>
+                                    <th>
+                                        Product:
+                                    </th>
+                                    <th>
+                                        Price:
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        {% for item in receipt2 %}
+                                            {{item}}
+                                            <br>
+                                        {% endfor %}
+                                        {{ name }}
+                                    </td>
+                                    
+                                    <td>
+                                        {% for item in receipt %}
+                                            {{item}}
+                                            <br>
+                                        {% endfor %}
+                                        {{ scannedInput }}
+                                    </td>
+                                    <tr>
+                                        <td>
+                                            Total: 
+                                        </td>
+                                        <td>
+                                            {{ total }}
+                                        </td>
+                                    </tr>
+                                </tr>
+                            </table>
+                        </th>   
+                    </tr>
+                </table>
+
+                <button class="btn btn-outline-secondary" value="cancel" name="cancel">Cancel Session</button>
+            </form>
+        </div>
+    </div>
+    
+{% endblock %}

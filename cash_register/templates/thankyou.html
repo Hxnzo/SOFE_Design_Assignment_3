@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block page_content %}
+
+    <div class="align-items-center p-2 m-2 text-center">
+        <p>Payment has been authorized by {{ type }}</p>
+        <h1>Thank you for using The Cash Register</h1>
+        <hr>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <button class="btn btn-outline-secondary text-center" type="submit" value="end" name="end">End Session!</button>
+        </form>
+    </div>
+
+{% endblock %}

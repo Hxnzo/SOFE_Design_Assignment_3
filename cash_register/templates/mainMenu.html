@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block page_content %}
+
+    <div class="row align-items-center p-2 m-2 text-center">
+        <h1>Welcome to The Cash Register</h1>
+        <hr>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <button class="btn btn-outline-secondary" type="submit" value="start" name="start">Start Session</button>
+        </form>
+    </div>
+
+{% endblock %}
