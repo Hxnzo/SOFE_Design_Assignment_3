@@ -11,4 +11,4 @@ After setting up Django:
 
 For use instructions, Working Program Screenshots PDF file.
 
-#### VALID BARCODES FOR CASH REGISTER: 123, 456, 789, 012.
+### VALID BARCODES FOR CASH REGISTER: 123, 456, 789, 012.
