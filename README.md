@@ -1,6 +1,6 @@
 # SOFE Design Assignment 3
 
-### Zubair Islam (100778152) Hanzalah Patel (100785622) Ziyad Khan (100784606)
+### Zubair Islam (100778152), Hanzalah Patel (100785622) Ziyad Khan (100784606)
 
 Use this link: https://code.visualstudio.com/docs/python/tutorial-django to set up django
 
