@@ -9,6 +9,6 @@ After setting up Django:
 4) In the terminal write: py manage.py runserver
 5) open the server link shown inside the terminal by pressing ctrl and left click on mouse
 
-For use instructions, Working Program Screenshots PDF file.
+For use instructions, check Working Program Screenshots PDF file.
 
 ### VALID BARCODES FOR CASH REGISTER: 123, 456, 789, 012.
